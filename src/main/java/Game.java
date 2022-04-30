@@ -132,13 +132,13 @@ public class Game {
                 playerMove("o");
             }
             printBoard();
-            if (round == 9) {
+            if (round == 8) {
                 System.out.println("REMIS");
                 break;
             }
             round++;
         }
-        if (round != 9) {
+        if (round != 8) {
             if (round % 2 == 0) {
                 System.out.println("WINNER: 0");
             } else {

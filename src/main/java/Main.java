@@ -5,12 +5,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         boolean isEnd = false;
         while (!isEnd) {
-            System.out.println("-------Tic Tac Toe-------");
-            System.out.println("Enter '1' if one player");
-            System.out.println("Enter '2' if two players");
-            System.out.println("Enter '0' to close app");
+            System.out.println("-------Tic Tac Toe------- | --MOVES--");
+            System.out.println("Enter '1' if one player   |   1 2 3");
+            System.out.println("Enter '2' if two players  |   4 5 6");
+            System.out.println("Enter '0' to close app    |   7 8 9");
+
 
             String choise = scanner.nextLine();
+            Game game = new Game();
 
             switch (choise) {
                 case "1" -> {
@@ -18,6 +20,7 @@ public class Main {
                 }
                 case "2" -> {
                     System.out.println("Two players");
+                    game.twoPlayers();
                 }
                 default -> {
                     isEnd = true;

@@ -123,7 +123,7 @@ public class Game {
         }
     }
 
-    public void twoPlayers() {
+    public void play() {
         int round = 0;
         while (winner() == null) {
             if (round % 2 == 0) {
